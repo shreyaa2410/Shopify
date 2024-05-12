@@ -10,6 +10,7 @@ import MyImage from './components/MyImage';
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Star from './components/Star';
+import AddToCart from './components/AddToCart';
 
 
 
@@ -155,7 +156,7 @@ const SingleProduct = () => {
             <div className="product-data-info">
               <p>
                 Available:
-                <span> {stock > 0 ? "In Stock" : "Not Available"}</span>
+                <span>{stock >0 ?" In stock":" Not Available"}</span>
               </p>
               <p>
                 ID : <span> {id} </span>
@@ -164,6 +165,8 @@ const SingleProduct = () => {
                 Brand :<span> {company} </span>
               </p>
             </div>
+            <hr/>
+            {stock>0 && <AddToCart product={singleProduct}/> }
           </div>
         </div>
       </Container>
