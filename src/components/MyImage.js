@@ -53,19 +53,19 @@ const Wrapper = styled.section`
 `;
 
 
-const MyImage = ({imgs=[{url:""}]}) => {
+const MyImage = ({imgs=[{url:""}]},id) => {
   const [mainImage,setMainImage]=useState(imgs[0]);
   return (
    <Wrapper>
      <div className="grid grid-four-column">
-        {imgs.map((curElm, index) => {
+        {imgs.map((curElm, id) => {
           return (
             <figure>
               <img
                 src={curElm.url}
                 alt={curElm.filename}
                 className="box-image--style"
-                key={index}
+                key={id}
                 onClick={() => setMainImage(curElm)}
               />
             </figure>

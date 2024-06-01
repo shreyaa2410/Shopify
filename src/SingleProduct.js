@@ -114,7 +114,7 @@ const SingleProduct = () => {
         <div className="grid grid-two-column">
           {/* product Images  */}
           <div className="product_images">
-            <MyImage imgs={image} />
+            <MyImage key={id} imgs={image} />
           </div>
 
           {/* product dAta  */}

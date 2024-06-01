@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 import axios from "axios";
 import reducer from '../reducer/ProductReducer';
 const AppContext = createContext();
-const API = "https://api.pujakaitem.com/api/products";
+const API =  "https://api.pujakaitem.com/api/products";
 const initialState = {
   isLoading: false,
   isError: false,
