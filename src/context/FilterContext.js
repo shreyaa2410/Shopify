@@ -40,7 +40,7 @@ useEffect(()=>{
 },[products])
 useEffect(()=>{
   dispatch({ type: "FILTER_PRODUCTS" });
-  dispatch({type:"SORTING_PRODUCTS", payload:products})
+  dispatch({type:"SORTING_PRODUCTS"})
 },[products,state.sorting_value,state.filters])
   return (
     <FilterContext.Provider value={{...state,setGridView,setListView,sorting,updateFilterValue }}>

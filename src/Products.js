@@ -18,7 +18,7 @@ const Wrapper = styled.section`
 `;
 const Products = () => {
 const allproducts= useFilterContext();
-console.log(allproducts)
+
   return (
     <Wrapper>
     <div className="container grid grid-filter-column">

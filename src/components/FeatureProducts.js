@@ -104,8 +104,7 @@ const Wrapper = styled.section`
 `;
 const FeatureProducts = () => {
     const { isLoading,featureProducts}= useContextProvider();
-    console.log(featureProducts);
-    console.log(isLoading)
+    
   return (
     <Wrapper className="section">
     <div className="container">
